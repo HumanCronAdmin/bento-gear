@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BentoGear - The Art of the Perfect Bento</title>
+<meta name="description" content="A curated database of Japanese bento boxes, accessories, and supplies. Find the perfect bento gear for your daily lunch.">
+<meta property="og:title" content="BentoGear - The Art of the Perfect Bento">
+<meta property="og:description" content="A curated database of Japanese bento boxes, accessories, and supplies for bento enthusiasts worldwide.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://humancronadmin.github.io/bento-gear/">
+<link rel="canonical" href="https://humancronadmin.github.io/bento-gear/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-brand">Bento<span>Gear</span></a>
+  <div class="nav-links">
+    <a href="database.html">Database</a>
+    <a href="#about">About</a>
+  </div>
+</nav>
+<section class="hero">
+  <h1>The Art of the Perfect <em>Bento</em>.</h1>
+  <p>Find the right gear. A curated database of Japanese bento boxes and accessories for lunch enthusiasts who take their meals seriously.</p>
+  <a href="database.html" class="btn btn-primary">Browse the Database</a>
+</section>
+<section class="section">
+  <h2 class="section-title">The Problem</h2>
+  <div class="problem-grid" id="problems"></div>
+</section>
+<section class="section" style="background:var(--dark);color:#FFF;max-width:none;padding:48px 16px">
+  <div class="stats-row" id="stats"></div>
+</section>
+<section class="section" style="text-align:center">
+  <h2 class="section-title">Ready to Build Your Bento Kit?</h2>
+  <p style="color:var(--muted);margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto">Filter by category, material, size, and price. Every listing includes real specs and expert notes from bento enthusiasts.</p>
+  <a href="database.html" class="btn btn-primary">Explore the Database</a>
+</section>
+<footer class="footer" id="about">
+  <p>BentoGear is an open-source project. Curating the best of Japanese bento culture for the world.</p>
+  <p style="margin-top:8px"><a href="https://github.com/humancronadmin">GitHub</a></p>
+</footer>
+<script>
+const problems=[
+  {icon:"\uD83C\uDF71",title:"Too many choices",desc:"Hundreds of bento boxes and accessories across dozens of Japanese brands. Impossible to compare without hours of research."},
+  {icon:"\uD83D\uDD0D",title:"Quality varies widely",desc:"A cheap plastic box and a premium lacquerware bento look similar in photos. Specs and materials tell the real story."},
+  {icon:"\uD83C\uDF0F",title:"Hard to find outside Japan",desc:"The best bento gear is made in Japan but rarely stocked locally. Knowing what to search for makes all the difference."}
+];
+const stats=[
+  {num:"30+",label:"Products"},
+  {num:"8",label:"Categories"},
+  {num:"Curated from Japan",label:"Real Brands Only"}
+];
+document.getElementById("problems").innerHTML=problems.map(p=>`<div class="problem-card"><div class="icon">${p.icon}</div><h3>${p.title}</h3><p>${p.desc}</p></div>`).join("");
+document.getElementById("stats").innerHTML=stats.map(s=>`<div class="stat"><div class="num">${s.num}</div><div class="label">${s.label}</div></div>`).join("");
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6776399834647681" crossorigin="anonymous"></script>
+</body>
+</html>
