@@ -73,6 +73,7 @@
       <ul class="product-pros">${prosHtml}</ul>
       <div class="product-best"><strong>Best for:</strong> ${p.best_for}</div>
       ${noteHtml}
+      ${p.amazon_url ? `<a href="${p.amazon_url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:auto;font-size:.85rem;padding:8px 16px;min-height:44px">Search on Amazon</a>` : ''}
     </div>`;
   }
 
